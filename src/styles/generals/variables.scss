@@ -1,0 +1,25 @@
+//colors
+:root {
+    --red-color: #C84044;
+    --red-color-light: #d04b56;
+    --red-color-text: #E2474B;
+    --gray-color: #9d9d9c;
+    --guinda-color: #7a1026;
+    --blue-color: #2C75B2;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --bg-base: #F1F2F2;
+
+    //font-sizes
+    --title-size-xxl: '40px';
+    --title-size-xl: '32px';
+    --title-size-lg: '25px';
+    --title-size-base: '20px';
+    --text-size-xl: '18px';
+    --text-size-base: '16px';
+    --text-size-sm: '12px';
+}
+
+body, html {
+    background-color: var(--bg-base)!important;
+}

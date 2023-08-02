@@ -1,0 +1,16 @@
+@import 'generals/fonts';
+@import 'generals/variables';
+@import 'generals/media';
+@import 'generals/globals';
+@import 'generals/text_styles';
+@import 'generals/buttons';
+
+.social-icons {
+    width: 40px;
+    height: 40px;
+    background: var(--red-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}

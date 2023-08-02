@@ -1,0 +1,178 @@
+.radio-list {
+    gap: 10px;
+    margin-top: 10px;
+    .month {
+        &-selected {
+            background-color: var(--bg-base);
+            border-radius: 10px;
+            font-family: 'Cocomat';
+            gap: 10px;
+            font-weight: bold;
+            font-size: var(--title-size-base);
+            padding: 10px 20px!important;
+
+            @include responsive(phone) {
+                font-size: var(--text-size-xl);
+                gap: 1px;
+                padding: 5px!important;
+            }
+    
+            svg {
+                background-color: var(--gray-color);
+                border-radius: 100%;
+                padding: 2px;
+                color: white;
+                margin-bottom: 4px;
+            }
+            &[data-checked] {
+                svg {
+                    background-color: var(--red-color);
+                }
+            }
+        }
+    }
+    
+    &.bigger {
+        .month {
+            &-selected {
+                width: 100%;
+            }
+        }
+        .box-radio {
+            width: 100%;
+        }
+    }
+
+}
+
+.select {
+    &-input {
+        background-color: transparent;
+        border: 0 !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid var(--gray-color)!important;
+        cursor: pointer;
+        padding: 6px 10px;
+        width: 100%;
+
+        &:active {
+            outline: transparent;
+        }
+    }
+}
+
+.textarea {
+    &-form {
+        background-color: transparent;
+        border: 0 !important;
+        border-bottom: 1px solid var(--gray-color)!important;
+        border-radius: 0 !important;
+        outline: none;
+    }
+}
+
+.document-types {
+    .radio-list {
+        .box-radio {
+            min-width: 250px;
+            @include responsive(phone) {
+                min-width: 150px;
+            }
+        }
+    }
+}
+
+.chakra-input {
+    border: 0!important;
+    border-radius: 0!important;
+
+    border-bottom: 1px solid var(--gray-color)!important;
+
+    &:hover,:active, &:focus, &:focus-visible, &[aria-invalid=true] {
+        outline: none!important;
+        box-shadow: inherit!important;
+        border-bottom: 2px solid var(--gray-color)!important;
+    }
+
+    &[aria-invalid=true] {
+        border-bottom: 1px solid var(--red-color)!important;
+    }
+}
+
+.chakra-checkbox {
+    &__control {
+        border-color: gray;
+    }
+}
+
+
+.chakra-modal {
+    &__content {
+        border-radius: 30px;
+    }
+}
+
+
+.line-trought {
+    align-items: center;
+    background-color: var(--red-color);
+    display: flex;
+    height: 2px;
+    margin-bottom: 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.input-position {
+    position: absolute;
+    left: -45px;
+    background: transparent;
+    border: 2px solid var(--red-color-light);
+    font-size: 12px;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    color: var(--black-color);
+    font-family: 'Cocomat';
+    font-weight: bold;
+    padding-top: 3px;
+
+    &.fill {
+        background: var(--red-color);
+        color: var(--bg-base);
+    }
+
+    @include responsive(phone) {
+        position: relative;
+        left: 0;
+    }
+}
+
+.formik-form {
+    label {
+        @include responsive(phone) {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+
+.my-account-tab {
+    flex-direction: column!important;
+    gap: 15px;
+    border-color: transparent!important;
+
+    button {
+        font-weight: bold;
+        align-self: flex-start;
+        text-align: left;
+        &[aria-selected=true] {
+            border-color: transparent!important;
+            color: var(--red-color)!important;
+        }
+    }
+}
